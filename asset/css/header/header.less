@@ -11,7 +11,7 @@
 	background: url("../img/1511.jpg") no-repeat ;
 	  	background-position: center center;
 		background-repeat: no-repeat; 
-		background-attachment: relative; 
+		background-attachment: fixed; 
 		background-size: cover; 
 		-moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
 		-o-background-size: 100% 100%;        /* Opera 9.5 */
@@ -27,4 +27,33 @@
 	text-align : center;
 	font-size : 30px;
 	color: white;
+}
+
+.headerpresentation{
+	background : black ;
+	opacity: 0.5;
+	width : 350px;
+
+	margin: 50px auto;
+
+
+}
+
+.headerpresentation h1 {
+	font-size : 20px;
+	color : #FFE ;
+}
+
+.headerpresentation h2 {
+	font-size : 15px;
+	color : #FFE ;
+}
+
+@media (max-width : 640px) {
+	
+	.headerpresentation{
+		width : 150px;
+		margin: 50px auto;
+	}
+	
 }

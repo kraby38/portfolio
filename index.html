@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="asset/js/responsivemobilemenu.js"></script>
+
 	<title>Portfolio de Kevin</title>
 	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
 </head>
@@ -13,12 +16,17 @@
 			</div><!-- header centre -->
 			<div class="headermenu">
 				<nav>
+					<div id="responsive-menu">
+						<button>
+							<span class="icon-menu"></span>
+						</button>
+					</div>
 					<div id="menu">
 			            <ul>
 			                <li><a href='#profil'>Profil</a></li>
 			                <li><a href='#parcours'>Parcours</a></li>
 			                <li><a href='#cv'>Curriculum Vitae</a></li>
-			                <li><a href='#creations'>Compétence</a></li>
+			                <li><a href='#competence'>Compétence</a></li>
 			            </ul>
 			        </div> <!-- balise du menu -->
 				</nav><!-- balise nav -->
@@ -39,6 +47,7 @@
 
 		<section> <!-- debut du profil -->
 			<article id="profil">
+				<a name="profil">profil</a> 
 				<p>
 
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio turpis, mollis fringilla dignissim vitae, imperdiet ut nisl. Pellentesque ut arcu sit amet nisi malesuada sagittis sed sit amet velit. Nunc sed risus sem. Nam consequat porta augue. Nunc vel venenatis nisl. Phasellus venenatis iaculis porta. Aliquam luctus condimentum tempus. Integer aliquet dui semper, cursus ipsum vitae, suscipit mauris. Sed venenatis metus non porttitor lobortis. Vestibulum a nunc ut nibh tincidunt tincidunt.
@@ -50,13 +59,14 @@
 
 		</section> <!-- fin du profil -->
 
-		<section> <!-- debut du parcours -->
-
-
+		<section > <!-- debut du parcours -->
+			<a name="parcours">parcours</a> 
+		
 			
 		</section> <!-- fin du parcours -->
 
-		<section> <!-- debut du cv -->
+		<section id="cv"> <!-- debut du cv -->
+			<a name="cv">cv</a> 
 			<article>
 				<h2>Développeur Junior</h2>
 				<h3>Supertec</h3>
@@ -91,40 +101,34 @@
 		</section> <!-- fin du cv -->
 
 		<section> <!-- debut des Compétence -->
+			<a name="competence">Compétence</a> 
 			<!-- debut des articles -->
-	        <div id="Competence">
+	        <div id="Competence1">
 	            <div class="Competence">
-	                <img src="asset/img/img1.jpg" width="100%" />
 	                <h2>HTML & CSS</h2>
 	            </div><!-- .Competence -->
 	            
 	            <div class="Competence">
-	                <img src="asset/img/img1.jpg" width="100%" />
 	                <h2>Wlangage</h2>
 	            </div><!-- .Competence -->
 
 	            <div class="Competence">
-	                <img src="asset/img/img1.jpg" width="100%" />
 	                <h2>Javascript,JQuery</h2>
 	            </div><!-- .Competence -->
 	             
 	            <div class="Competence">
-	                <img src="asset/img/img1.jpg" width="100%" />
 	                <h2>C , C++ , Java</h2>
 	            </div><!-- .Competence -->
 				
 				<div class="Competence">
-	                <img src="asset/img/img1.jpg" width="100%" />
 	                <h2>PhP , MySQL</h2>
 	            </div><!-- .Competence -->
 				
 				 <div class="Competence">
-	                <img src="asset/img/img1.jpg" width="100%" />
 	                <h2>AJAX</h2>
 	            </div><!-- .Competence -->
 
 	            <div class="Competence">
-	                <img src="asset/img/img1.jpg" width="100%" />
 	                <h2>réseaux, administration Linux</h2>
 	            </div><!-- .Competence -->			 
 	            

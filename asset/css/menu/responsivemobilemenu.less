@@ -43,3 +43,33 @@
 
 	background: #282828;
 }
+
+#responsive-menu{
+	display: none;
+}
+
+@media (max-width : 640px) {
+
+	#menu{
+		display: none;
+	}
+	
+	#responsive-menu{
+		position:absolute;
+ 		top:0;
+ 		left:0;
+		display: block;
+	}
+
+	#responsive-menu button {
+		border: none;
+		background-color: black;
+		opacity : 1;
+	}
+
+	#responsive-menu span {
+		font-size : 30px;
+		color : white ;
+	}
+	
+}

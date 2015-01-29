@@ -1,62 +1,77 @@
-#menu {
-  width: auto;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center ;
-}
-#menu li {
-  display: inline ;
-}
-#menu ul {
-  line-height: 1.5;
-}
-#menu li a {
-  background: #fff ;
-  color: #000 ;
-  font: 1em "Trebuchet MS", Arial, sans-serif;
-  line-height: 1em ;
-  text-align: center ;
-  text-decoration: none ;
-  padding: 20px 0 ;
-}
-#menu ul li a {
-  position: relative;
-  margin: 0;
-  border-top: 1px dotted #3a3a3a;
-  border-bottom: 1px dotted #1b1b1b;
-  padding: 11px 20px;
-  /* Typography */
-  font-family: Helvetica, Arial, sans-serif;
-  color: #d8d8d8;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 0 1px 1px #000;
-  font-size: 13px;
-  font-weight: 300;
-  /* Background & effects */
-  background: #282828;
-}
-#responsive-menu {
-  display: none;
-}
-@media (max-width: 640px) {
-  #menu {
-    display: none;
+@media only screen and (max-width: 750px) {
+  .contenu-site,
+  .contenu {
+    height: 100%;
   }
-  #responsive-menu {
+  .contenu {
+    overflow: scroll;
+  }
+  .contenu-site {
+    transition-duration: 0.3s;
+    transform: translateX(0px);
+  }
+  .site-content {
     position: absolute;
+    top: 66px;
+    /* La hauteur du header */
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+  }
+  .header {
+    position: static;
+  }
+  /* L'icône hamburger, en utilisant le box-shadow */
+  .iconedumenu {
+    position: fixed;
     top: 0;
     left: 0;
     display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
   }
-  #responsive-menu button {
-    border: none;
-    background-color: black;
-    opacity: 1;
+  .iconedumenu:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    top: 16px;
+    left: 15px;
   }
-  #responsive-menu span {
-    font-size: 30px;
-    color: white ;
+  /* Le menu collé à gauche est masqué grâce à un transform */
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+    width: 350px;
+    height: auto;
+    transform: translateX(-350px);
+  }
+  /* Un lien par ligne */
+  .menu a {
+    font-color: green;
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #303f9f;
+  }
+  /* Toujours dans le @media */
+  .responsive .contenu {
+    transform: translateX(350px);
+  }
+  /* On met un cache par dessus le site-content pour bloquer le scroll et permettre le retour au site */
+  .responsive .siteacacher {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }

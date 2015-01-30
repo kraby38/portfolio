@@ -1,31 +1,55 @@
 .menu {
-  	position: absolute;
-    left: 0;
+    position: fixed;
+    right: 0;
     top: 0;
     bottom: 0;
+    width: 100%;
+    height: 60px;
     background-color: black;
-    width: 100%; 
-    height: 40px;
+    opacity: 0.7;
+
+  }
+    /* Un lien par ligne */
+    .menu a {
+      color: white;
+      font-size: 30px;
+      display: inline;
+      height: 40px;
+      text-align: center;
+      line-height: 50px;
+      padding: 10px 20px;
+    }
+
+
+
+@media only screen and (max-width: 550px) {
+  .contenu-site, .contenu { height: 100%; }
+  .contenu { overflow: scroll; }
+  .contenu-site {
+  }
+
+  .site-content {
+    position: fixed;
+    top: 66px; /* La hauteur du header */
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
     
   }
 
+  .header { position: static; }
 
-.menu  a {
-  	display: inline;
-  	text-decoration: inherit;
-	height: 40px;
-	color: white;
-	text-align: center;
-	line-height: 40px;
-	padding: 0 20px;
-	 
+  
+    /* Un lien par ligne */
+    .menu a {      
+      font-size: 15px;
+    }
+
+
 
 }
-.iconedumenu { 
-	text-decoration: inherit; 
-	font-size : 20px;
-	font-color : white;
-  	position: fixed;
-    display: none;
-    cursor: pointer;
-}
+
+
+
+

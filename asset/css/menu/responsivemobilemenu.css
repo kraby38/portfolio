@@ -1,24 +1,27 @@
-
 @media only screen and (max-width: 750px) {
-  .contenu-site, .contenu { height: 100%; }
-  .contenu { overflow: scroll; }
+  .contenu-site,
+  .contenu {
+    height: 100%;
+  }
+  .contenu {
+    overflow: scroll;
+  }
   .contenu-site {
     transition-duration: 0.3s;
-    transform: translateX(0px); 
+    transform: translateX(0px);
   }
-
   .site-content {
     position: absolute;
-    top: 66px; /* La hauteur du header */
+    top: 66px;
+    /* La hauteur du header */
     right: 0;
     left: 0;
     bottom: 0;
     padding-top: 0;
-    
   }
-
-  .header { position: static; }
-
+  .header {
+    position: static;
+  }
   /* L'icône hamburger, en utilisant le box-shadow */
   .iconedumenu {
     position: fixed;
@@ -28,20 +31,16 @@
     float: left;
     width: 45px;
     height: 45px;
-    
   }
-    .iconedumenu:after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 1rem;
-      height: 0;
-      top: 16px;
-      left: 15px;
- }
-
-
-
+  .iconedumenu:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    top: 16px;
+    left: 15px;
+  }
   /* Le menu collé à gauche est masqué grâce à un transform */
   .menu {
     position: absolute;
@@ -51,19 +50,18 @@
     background-color: red;
     width: 350px;
     height: auto;
-    transform: translateX(-350px); 
+    transform: translateX(-350px);
   }
-    /* Un lien par ligne */
-    .menu a {
-      font-color : green;
-      display: block;
-      height: 40px;
-      text-align: center;
-      line-height: 40px;
-      border-bottom: 1px solid #303f9f; 
-    }
-
-/* Toujours dans le @media */
+  /* Un lien par ligne */
+  .menu a {
+    font-color: green;
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #303f9f;
+  }
+  /* Toujours dans le @media */
   .responsive .contenu {
     transform: translateX(350px);
   }
@@ -74,14 +72,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.6);
   }
-
-
-
-
 }
-
-
-
-

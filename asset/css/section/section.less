@@ -1,76 +1,119 @@
-#profil{
+.profil{
 	background-color:grey;
-}
-
-#cv{
-	background-color:white;
-}
-
-#parcours{
-	background-color: grey;
-	display: inline;
-	float: inherit;
+	border-radius: 10px;
+	opacity: 0.8;
 	padding: 0;
-	margin: 0;
-	.bac{		
-		background: url("http://www.mgrenoble.fr/img_a1/Les_l_ves_du_lyc_e_Ferdinand_Buisson_Voiron_vont_profiter_d_un_nouvel_internat.jpg");
-			background-position: center center;
-			background-repeat: no-repeat; 
-			background-attachment: relative; 
-			background-size: cover; 
-			-moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
-			-o-background-size: 100% 100%;        /* Opera 9.5 */
-			-webkit-background-size: 100% 100%;   /* Safari 3.0 */
-			background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) > CSS3 */
-		width: 35%;
-		height: 50%;
+	width: auto;
+	height: 380px;
+	
+	.perso{
+		width:150px;
+		height:auto;
+		margin-left:auto;
+		margin-right: auto;
+		float: left;	
 	}
-
-	.dut{
-		background: url("https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/c0.153.851.315/p851x315/1524493_1001095206571448_5319884563189833887_o.jpg");
-			background-position: center center;
-			background-repeat: no-repeat; 
-			background-attachment: relative; 
-			background-size: cover; 
-			-moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
-			-o-background-size: 100% 100%;        /* Opera 9.5 */
-			-webkit-background-size: 100% 100%;   /* Safari 3.0 */
-			background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) > CSS3 */
-		width: 35%;
-		height: 50%;
+	.ecole{
+		width:150px;
+		height:auto;
+		margin-left:auto;
+		margin-right: auto;
+		float: center;
+		
 	}
-	.bts{
-		background: url("http://mw2.google.com/mw-panoramio/photos/medium/73896975.jpg");
-			background-position: center center;
-			background-repeat: no-repeat; 
-			background-attachment: relative; 
-			background-size: cover; 
-			-moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
-			-o-background-size: 100% 100%;        /* Opera 9.5 */
-			-webkit-background-size: 100% 100%;   /* Safari 3.0 */
-			background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) > CSS3 */
-		width: 35%;
-		height: 50%;
+	.objectif{
+		width:150px;
+		height:auto;		
+		float: right;
+		margin-left:auto;
+		margin-right: auto;
 	}
-	.licence{
-		background: url("../img/licence.png");
-			background-position: center center;
-			background-repeat: no-repeat; 
-			background-attachment: relative; 
-			background-size: cover; 
-			-moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
-			-o-background-size: 100% 100%;        /* Opera 9.5 */
-			-webkit-background-size: 100% 100%;   /* Safari 3.0 */
-			background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) > CSS3 */
-		width: 35%;
-		height: 50%;
+	span{
+		color: white;
+		font-size: 40px;
 	}
-
+	p{
+		font-size: 15px;
+	}
+	p:first-letter{
+		font-size: 200%;
+		
+	}
+	h1{
+		font-size: 40px;
+		text-decoration:underline;
+		text-transform: uppercase;
+	}
 	
 }
 
-
-#cv a{
-	font-size: 40px	;
+.parcours{
+	background-color: #C0C0C0;
+	border-radius: 10px;
+	display: block;	
+	padding: 0;
+	width:45%;
+	float:left;
+	margin:5px;
+	margin-left: 4%;
+	img{
+		width: 25%;
+	}
+	h1{
+		font-size: 40px;
+		text-decoration:underline;
+		text-transform: uppercase;
+	}	
 }
 
+
+.cv {	
+	background-color: #A0A0A0;
+	border-radius: 10px;
+	display: block;	
+	padding: 0 auto;
+	width:45%;
+	float:left;
+	margin:5px;
+	margin-left: 4%;
+	img{
+		width: 25%;
+	}
+	h1{
+		font-size: 40px;
+		text-decoration:underline;
+		text-transform: uppercase;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+
+	.profil{	
+		height: 620px;
+		.perso{
+			width: auto;
+		}
+		.ecole{
+		width:auto;				
+		}
+		.objectif{
+			width:auto;		
+		}	
+	}
+
+	.parcours{	
+		padding: 0;
+		width:100%;
+		float:left;
+		margin:5px;	
+	}
+
+
+	.cv {	
+		padding: 0;
+		width:100%;
+		float:left;
+		margin:5px;	
+	}
+
+}

@@ -1,9 +1,106 @@
-#profil {
+.profil {
   background-color: grey;
+  border-radius: 10px;
+  opacity: 0.8;
+  padding: 0;
+  width: auto;
+  height: 380px;
 }
-#cv {
-  background-color: white;
+.profil .perso {
+  width: 150px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
 }
-#parcours {
-  background-color: white;
+.profil .ecole {
+  width: 150px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+}
+.profil .objectif {
+  width: 150px;
+  height: auto;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profil span {
+  color: white;
+  font-size: 40px;
+}
+.profil p {
+  font-size: 15px;
+}
+.profil p:first-letter {
+  font-size: 200%;
+}
+.profil h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.parcours {
+  background-color: #C0C0C0;
+  border-radius: 10px;
+  display: block;
+  padding: 0;
+  width: 45%;
+  float: left;
+  margin: 5px;
+  margin-left: 4%;
+}
+.parcours img {
+  width: 25%;
+}
+.parcours h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.cv {
+  background-color: #A0A0A0;
+  border-radius: 10px;
+  display: block;
+  padding: 0 auto;
+  width: 45%;
+  float: left;
+  margin: 5px;
+  margin-left: 4%;
+}
+.cv img {
+  width: 25%;
+}
+.cv h1 {
+  font-size: 40px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 550px) {
+  .profil {
+    height: 620px;
+  }
+  .profil .perso {
+    width: auto;
+  }
+  .profil .ecole {
+    width: auto;
+  }
+  .profil .objectif {
+    width: auto;
+  }
+  .parcours {
+    padding: 0;
+    width: 100%;
+    float: left;
+    margin: 5px;
+  }
+  .cv {
+    padding: 0;
+    width: 100%;
+    float: left;
+    margin: 5px;
+  }
 }

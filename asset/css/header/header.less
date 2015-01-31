@@ -1,56 +1,54 @@
 .contenu {
-
 	top : 0px;
 	display:block;
 	position:relative;
 	width:100%;
 	text-align: center;
-}
 
-.contenu .header{
-	background: url("../img/1511.jpg") no-repeat ;
-	  	background-position: center center;
-		background-repeat: no-repeat; 
-		background-attachment: fixed; 
-		background-size: cover; 
-		-moz-background-size: 100% 100%;     /* Gecko 1.9.2 (Firefox 3.6) */
-		-o-background-size: 100% 100%;        /* Opera 9.5 */
-		-webkit-background-size: 100% 100%;   /* Safari 3.0 */
-		background-size: 100% 100%;           /* Gecko 2.0 (Firefox 4.0) > CSS3 */
-    height: auto;
-    
+	.header{
+    height: auto;    
     padding: 50px;
     margin: 0px;
+		
+	}
 }
 
-.contenu .header .headercentre{
-	text-align : center;
-	font-size : 30px;
-	color: white;
-}
 
 .headerpresentation{
-	background : black ;
-	opacity: 0.5;
-	width : 350px;
-	margin: 50px auto;
+	background : #191919 ;
+	border-radius: 10px;	
+	width : 100%;
+	height: auto;
+	margin: 30px auto;
+	h1{
+		text-align : center;
+		font-size : 60px;
+		color: #1E90FF;
+		text-transform: uppercase;
+		span.bleu{
+			color :#00CBCB;
+		}
+		span.gris{
+			color: #464646;
+		}
+		span.blanc{
+			font-size: 50px;
+			color:#FFF;
+		}
+	}
+	a{
+		font-size: 40px	;
+		color:#FFF;
+		border-width:5px;
+ 		border-style:inset;
+ 		border-color:white;
+	}	 
 
 }
 
-.headerpresentation h1 {
-	font-size : 20px;
-	color : #FFE ;
-}
-
-.headerpresentation h2 {
-	font-size : 15px;
-	color : #FFE ;
-}
-
- @media (max-width : 640px) {
+@media only screen and (max-width: 550px) {
   
-  .headerpresentation{
-    width : 150px;
+  .headerpresentation{   
     margin: 50px auto;
   }
   
